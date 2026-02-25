@@ -1,45 +1,46 @@
-# Document Ease Platform
+# Doctor Appointment Booking Platform
 
-Welcome to the **Document Ease Platform**! This repository contains resources and documentation to help you navigate and utilize the platform effectively.
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
-6. [License](#license)
-
-## Introduction
-The Document Ease Platform is designed to streamline document management, offering a user-friendly interface and powerful features to enhance productivity.
+## Overview
+This platform allows patients to book doctor's appointments easily and efficiently. It provides a user-friendly interface for searching doctors, viewing availability, and managing appointments.
 
 ## Features
-- **User-Friendly Interface:** Easy to navigate and manage documents.
-- **Advanced Search:** Quickly find the documents you need.
-- **Collaboration Tools:** Share and work on documents with team members seamlessly.
+- **User Authentication**: Secure login and registration for patients and doctors.
+- **Search Functionality**: Patients can search for doctors by specialty, location, and availability.
+- **Appointment Management**: Users can view, update, and cancel appointments.
+- **Notification System**: Reminders and notifications via email and SMS for upcoming appointments.
+- **Admin Dashboard**: Admins can manage users, appointments, and view analytics.
 
-## Installation
-To get started, clone the repository and install the necessary dependencies:
+## Tech Stack
+- **Frontend**: React.js
+- **Backend**: Node.js with Express
+- **Database**: MongoDB
+- **Hosting**: AWS
+- **Authentication**: JWT (JSON Web Tokens)
 
-```bash
-git clone https://github.com/ankush033/doc-ease-platform.git
-cd doc-ease-platform
-npm install
-```
+## Setup Instructions
+1. Clone the repository:  
+   `git clone https://github.com/ankush033/doc-ease-platform.git`
+2. Navigate to the project directory:  
+   `cd doc-ease-platform`
+3. Install dependencies:  
+   `npm install`
+4. Create a `.env` file and add your environment variables as needed.
+5. Start the server:  
+   `npm start`
+6. Open your browser and go to `http://localhost:3000`.
 
-## Usage
-Begin using the Document Ease Platform by running:
+## Architecture
+The application is structured in the following layers:  
+- **Presentation Layer**: Handles user interface and experience.  
+- **Business Logic Layer**: Contains core functionality and business rules.  
+- **Data Access Layer**: Manages data persistence and retrieval.
 
-```bash
-npm start
-```
+## Deployment
+To deploy the application:  
+1. Build the application:  
+   `npm run build`
+2. Deploy the build folder to your hosting provider.  
+3. Ensure your database is hosted and connected properly.
 
-Visit `http://localhost:3000` in your browser to access the application.
-
-## Contributing
-We welcome contributions! Please read our [contributing guidelines](CONTRIBUTING.md) before submitting your pull requests.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-For more information, visit our [documentation](docs/README.md).
+## Conclusion  
+This Doctor Appointment Booking Platform is designed to streamline healthcare services, making it easy for patients to manage their healthcare needs effectively.
