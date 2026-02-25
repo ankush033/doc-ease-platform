@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Doctors Appointment App",
+  title: "DocEase– Doctor Appointment Management Platform",
   description: "Connect with doctors anytime, anywhere",
 };
 
@@ -37,7 +37,10 @@ export default function RootLayout({ children }) {
 
             <footer className="bg-muted/50 py-12">
               <div className="container mx-auto px-4 text-center text-gray-200">
-                <p>Made with 💗 by RoadsideCoder</p>
+               <p className="text-center text-sm text-gray-500">
+                 © 2026 DocEase. All rights reserved. <br />
+                   Made with ❤️ by Ankush Gupta
+                </p>
               </div>
             </footer>
           </ThemeProvider>
